@@ -1,0 +1,5 @@
+package com.user.account.repository;
+
+public interface AddressRepository {
+
+}

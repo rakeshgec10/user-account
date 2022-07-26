@@ -1,0 +1,24 @@
+package com.user.account.dto;
+
+import javax.persistence.Column;
+import javax.validation.constraints.NotEmpty;
+
+public class AddressDto {
+	
+	  private String street;
+
+	    @Column
+	    private String city;
+
+	    @Column
+	    private String state;
+
+	    @NotEmpty(message = "*Please provide your country name")
+	    @Column
+	    private String country;
+
+	    @NotEmpty(message = "*Please provide zipcode")
+	    @Column
+	    private int zipcode;
+
+}

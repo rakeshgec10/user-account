@@ -1,0 +1,19 @@
+package com.user.account.dto;
+
+public class UserDto {
+
+    private String email;
+
+   
+    private String password;
+
+
+    private String name;
+
+   
+    private String lastName;
+
+   
+    private int active;
+
+}

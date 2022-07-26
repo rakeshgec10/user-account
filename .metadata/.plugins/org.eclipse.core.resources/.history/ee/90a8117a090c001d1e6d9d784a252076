@@ -1,0 +1,25 @@
+package com.user.account.mapper;
+
+import org.mapstruct.Mappings;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+import com.user.account.dto.AddressDto;
+import com.user.account.dto.UserDto;
+import com.user.account.entity.Address;
+import com.user.account.entity.User;
+
+@Mapper
+public interface  UserMapper {
+
+	User userDTOtoUser(UserDto userdto);
+    
+  
+    UserDto userDtoToEntity(User user);
+    
+    Address addressDtotoEntity(AddressDto addressdto);
+    
+    AddressDto addressToDto(Address address);
+
+}

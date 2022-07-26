@@ -1,0 +1,39 @@
+package com.user.account.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.user.account.entity.User;
+import com.user.account.repository.UserRepository;
+import com.user.account.service.UserService;
+
+@Service
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	UserRepository userRepo;
+
+	@Override
+	public User newUser(User user) {
+		
+		return null;
+	}
+
+	@Override
+	public User userById(Integer userid) {
+		
+		return null;
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		
+		return null;
+	}
+	
+	
+	
+
+}

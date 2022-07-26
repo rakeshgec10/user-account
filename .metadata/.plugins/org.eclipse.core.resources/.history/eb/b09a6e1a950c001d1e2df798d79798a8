@@ -1,0 +1,5 @@
+package com.user.account.service.impl;
+
+public class RoleServiceImpl extends RoleService{
+
+}

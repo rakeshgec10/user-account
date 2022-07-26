@@ -1,0 +1,15 @@
+package com.user.account.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.user.account.repository.UserRepository;
+
+@Service
+public class UserServiceImpl implements UserService{
+	
+	UserRepository userRepo;
+	
+	
+	
+
+}

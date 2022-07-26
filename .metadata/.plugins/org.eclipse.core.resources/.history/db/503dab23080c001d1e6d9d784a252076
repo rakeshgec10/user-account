@@ -1,0 +1,42 @@
+package com.user.account.dto;
+
+
+
+import java.util.HashSet;
+import java.util.Set;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserDto {
+	
+	private Long id;
+
+    private String email;
+
+   
+    private String password;
+
+
+    private String name;
+
+   
+    private String lastName;
+
+   
+    private int active;
+    
+    private String rolename;
+    
+    
+    private Set<AddressDto> addressSet=new HashSet<AddressDto>();
+    
+    
+
+}

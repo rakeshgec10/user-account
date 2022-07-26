@@ -1,0 +1,45 @@
+package com.user.account.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dto.springbootmapstruct.service.ProductService;
+import com.dto.springbootmapstruct.service.mapper.ProductMapper;
+import com.user.account.dto.UserDto;
+import com.user.account.entity.User;
+import com.user.account.mapper.UserMapper;
+import com.user.account.service.UserService;
+
+import lombok.RequiredArgsConstructor;
+
+@RestController
+@RequiredArgsConstructor
+public class UserController {
+	
+	
+	UserService userService;
+	
+	
+	UserMapper maper;
+	
+	
+	
+	public UserController(UserService userService, UserMapper maper) {
+		super();
+		this.userService = userService;
+		this.maper = maper;
+	}
+
+
+
+	@PostMapping("/addUser")
+	public UserDto newUser(@RequestBody UserDto userdto) {
+		User user=maper.userDTOtoUser(userdto);
+		user=userService.newUser(user);
+		userdto=maper.userDtoToEntity(user);
+		return userdto;
+	}
+
+}

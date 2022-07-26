@@ -1,0 +1,30 @@
+package com.user.account.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.user.account.dto.UserDto;
+import com.user.account.entity.User;
+import com.user.account.mapper.UserMapper;
+import com.user.account.service.UserService;
+
+@RestController
+public class UserController {
+	
+	
+	@Autowired
+	private final UserService userService;
+	
+	@Autowired
+	private final UserMapper maper;
+
+
+	@PostMapping("/addUser")
+	public UserDto newUser(@RequestBody UserDto userdto) {
+		User user=userService.newUser(maper.userDTOtoUser(userdto));
+		userdto=maper.userDtoToEntity(user);
+		return userdto;
+	}
+
+}

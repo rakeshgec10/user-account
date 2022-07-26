@@ -1,0 +1,5 @@
+package com.user.account.dto;
+
+public class AddressDto {
+
+}

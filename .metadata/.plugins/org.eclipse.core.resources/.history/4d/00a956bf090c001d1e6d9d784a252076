@@ -1,0 +1,12 @@
+package com.user.account.controller;
+
+import com.user.account.service.UserService;
+
+public class UserController {
+	
+	
+	UserService userService;
+	
+	
+
+}

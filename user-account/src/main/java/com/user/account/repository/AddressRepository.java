@@ -1,0 +1,15 @@
+package com.user.account.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.user.account.entity.Address;
+
+@Repository
+public interface AddressRepository extends JpaRepository<Address, Integer>{
+	
+	@Query(value="SELECT a from Address as a where a.zipcode=?1")
+	Address findByZipCode(int zipcode);
+
+}

@@ -1,0 +1,18 @@
+package com.user.account.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.user.account.mapper.UserMapper;
+import com.user.account.service.UserService;
+
+public class UserController {
+	
+	@Autowired
+	UserService userService;
+	
+	@Autowired
+	UserMapper maper;
+	
+	
+
+}

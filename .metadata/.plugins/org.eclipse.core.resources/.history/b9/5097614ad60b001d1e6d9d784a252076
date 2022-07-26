@@ -1,0 +1,8 @@
+package com.user.account.service;
+
+public interface RoleService {
+	
+	
+	Role allRole;
+
+}

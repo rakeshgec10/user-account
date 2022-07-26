@@ -1,0 +1,9 @@
+package com.user.account.api;
+
+import org.springframework.context.annotation.Bean;
+
+public class Config {
+
+	@Bean
+	com.user.account.mapper.UserMapper UserMapper;
+}

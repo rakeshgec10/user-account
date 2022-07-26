@@ -1,0 +1,8 @@
+package com.user.account.api;
+
+import org.springframework.context.annotation.Bean;
+
+public class Config {
+
+	
+}

@@ -1,0 +1,5 @@
+package com.user.account.config;
+
+public class MappingEntity {
+
+}

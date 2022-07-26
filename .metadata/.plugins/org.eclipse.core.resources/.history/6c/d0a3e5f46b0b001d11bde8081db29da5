@@ -1,0 +1,5 @@
+package com.user.account.entity;
+
+public class User {
+
+}

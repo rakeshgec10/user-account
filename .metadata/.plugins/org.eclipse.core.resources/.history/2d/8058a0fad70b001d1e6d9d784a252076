@@ -1,0 +1,12 @@
+package com.user.account.service;
+
+import com.user.account.entity.Address;
+
+public interface AddressService {
+	
+	
+ Address findZipcode(Integer zipcode); 	
+ 
+ List<Address> findAllList();
+
+}

@@ -1,0 +1,24 @@
+package com.user.account.mapper;
+
+import org.mapstruct.Mappings;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+import com.user.account.dto.UserDto;
+import com.user.account.entity.User;
+
+@Mapper
+public interface  UserMapper {
+	
+    @Mappings({ @Mapping(target = "id", source = "userdto.userid"), 
+    	@Mapping(target = "email", source = "userdto.emailid"), 
+    	@Mapping(target = "password", source = "userdto.password")})
+	User userDTOtoUser(UserDto userdto);
+    
+    @Mappings({ @Mapping(target = "employeeId", source = "user.id"), 
+    	@Mapping(target = "employeeName", source = "user.name"),
+    	@Mapping(target = "employeeStartDt", source = "user.startDt") })
+    UserDto userDtoToEntity(User user);
+
+}

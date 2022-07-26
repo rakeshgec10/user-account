@@ -1,0 +1,15 @@
+package com.user.account.mapper;
+
+import org.mapstruct.Mapper;
+
+import com.user.account.dto.AddressDto;
+import com.user.account.entity.Address;
+
+@Mapper(componentModel = "spring")
+public interface AddressMapper {
+	
+	  Address addressDtotoEntity(AddressDto addressdto);
+	    
+	    AddressDto addressToDto(Address address);
+
+}

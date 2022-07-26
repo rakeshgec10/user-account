@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/hibernate-tutorial" element2="/mapstruct-demo" element3="/mapstruct-facade-spring-boot-starter" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1658756556940"/>
+</session>

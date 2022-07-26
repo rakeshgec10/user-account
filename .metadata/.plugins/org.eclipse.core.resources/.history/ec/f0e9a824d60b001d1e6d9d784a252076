@@ -1,0 +1,16 @@
+package com.user.account.service;
+
+import com.user.account.entity.User;
+
+public interface UserService {
+	
+	
+	User newUser(User user);
+	
+	User userById(Integer userid);
+	
+	Lis<User> getAllUser()
+	
+	
+
+}
